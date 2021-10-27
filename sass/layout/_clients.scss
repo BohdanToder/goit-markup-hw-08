@@ -1,0 +1,33 @@
+.client__title {
+	margin-bottom: 50px;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+}
+
+.client__list {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+.client__link {
+	@extend %flex-center;
+
+	width: 170px;
+	height: 92px;
+	border-radius: 4px;
+
+	fill: var(--clients-primary-icon-color);
+	border: 1px solid var(--clients-primary-icon-color);
+	transition: fill 250ms var(--cubic), border-color 250ms var(--cubic);
+
+	&:hover,
+	&:focus {
+		fill: var(--clients-accent-icon-color);
+		border-color: var(--clients-accent-icon-color);
+		outline: none;
+	}
+}

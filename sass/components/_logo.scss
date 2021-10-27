@@ -1,0 +1,22 @@
+.logo {
+	display: block;
+
+	font-family: var(--second-font-family);
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--main-logo-color);
+	text-decoration: none;
+
+	&__right-side--black {
+		color: var(--second-logo-color);
+	}
+
+	&__right-side--white {
+		color: var(--third-logo-color);
+	}
+}
+
+.footer__logo {
+	margin-bottom: 20px;
+}

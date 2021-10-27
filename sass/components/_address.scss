@@ -1,0 +1,29 @@
+.address {
+	list-style-type: none;
+}
+
+.address__item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+.address__link {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	color: var(--footer-link-color);
+	transition: color 250ms var(--cubic);
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: var(--accent-text-color);
+	}
+}
+
+.address__link--white {
+	color: var(--just-white-color);
+}
+
+.footer__address {
+	margin-right: 70px;
+}
