@@ -293,7 +293,7 @@ summary {
   --second-font-family: Raleway, sans-serif;
 }
 
-.social-list__link, .join__social-link, .subscribe__button, .modal__close-button, .modal-form__checkbox-label, .modal-form__custom-icon, .modal-form__button, .features__icon, .speciality__name, .client__link, .work-list__description {
+.social-list__link, .join__social-link, .subscribe__button, .modal__close-button, .modal-form__checkbox-label, .modal-form__custom-icon, .modal-form__button, .speciality__name, .client__link, .work-list__description {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -899,21 +899,7 @@ img {
 }
 
 .features {
-  display: flex;
-  justify-content: space-between;
   list-style-type: none;
-}
-
-.features__item {
-  flex-basis: calc((100% - 90px) / 4);
-}
-
-.features__icon {
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background-color: var(--features-icon-bgcolor);
 }
 
 .features__name {
