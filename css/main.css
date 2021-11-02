@@ -335,7 +335,7 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -459,8 +459,8 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .social-list {
@@ -900,6 +900,11 @@ img {
 
 .features {
   list-style-type: none;
+}
+
+.features__item {
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .features__name {
