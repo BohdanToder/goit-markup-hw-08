@@ -1,9 +1,29 @@
+.logo-address-div {
+	margin-bottom: 60px;
+
+	@media screen and (min-width: 768px) {
+		margin-right: 165px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: 231px;
+		margin-right: 70px;
+		margin-bottom: 0;
+	}
+}
+
 .address {
 	list-style-type: none;
 }
 
+.address__item {
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+	}
+}
+
 .address__item:not(:last-child) {
-	margin-bottom: 9px;
+	margin-bottom: 8px;
 }
 
 .address__link {
@@ -22,8 +42,4 @@
 
 .address__link--white {
 	color: var(--just-white-color);
-}
-
-.footer__address {
-	margin-right: 70px;
 }
