@@ -1,0 +1,145 @@
+.menu__button {
+	@extend %flex-center;
+
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none;
+	fill: var(--primary-menubtn-color);
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+	transition: fill 250ms var(--cubic);
+
+	&:hover,
+	&:focus {
+		fill: var(--accent-menubtn-color);
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.menu__button--right-side {
+	margin-left: auto;
+}
+
+.menu__button--absolute {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+
+.menu__container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--just-white-color);
+	padding: 48px 40px;
+	z-index: 999;
+	transition: transform 250ms var(--cubic);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	transform: translateX(100%);
+	&.is-open {
+		transform: translateX(0);
+	}
+}
+
+//Меню-нав
+.menu-nav {
+	list-style-type: none;
+}
+
+.menu-nav__item:not(:last-child) {
+	margin-bottom: 32px;
+}
+
+.menu-nav__link {
+	display: block;
+
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.175;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+	text-decoration: none;
+	transition: color 250ms var(--cubic);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-text-color);
+	}
+}
+
+.menu-nav__link--current {
+	color: var(--accent-text-color);
+}
+
+//Меню-контакт
+.menu-contacts {
+	list-style-type: none;
+}
+
+// .menu__menu-contacts {
+// 	margin-top: 302px;
+// }
+
+.menu-contacts__item:not(:last-child) {
+	margin-bottom: 32px;
+}
+
+.menu-contacts__link {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.17;
+	letter-spacing: 0.02em;
+	color: var(--secondary-text-color);
+	text-decoration: none;
+	transition: color 250ms var(--cubic);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-text-color);
+	}
+}
+
+//Меню-соц.сети
+.menu-social-list {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu__menu-social-list {
+	margin-top: 64px;
+}
+
+.menu-social-list__item:not(:last-child) {
+	margin-right: 10px;
+	&::after {
+		content: "";
+		width: 22px;
+		height: 0px;
+		color: black;
+		margin-left: 10px;
+
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		transform: rotate(90deg);
+	}
+}
+
+.menu-social-list__link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.22;
+	letter-spacing: 0.02em;
+	color: var(--accent-text-color);
+	text-decoration: none;
+}
