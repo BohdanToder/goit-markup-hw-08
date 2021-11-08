@@ -3,15 +3,31 @@
 
 	margin-bottom: 12px;
 
-	font-size: 20px;
-	line-height: 1.15;
+	font-size: 13px;
+	line-height: 1.5;
 	text-align: center;
+
+	@media screen and (min-width: 480px) {
+		font-size: 20px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		line-height: 1.15;
+	}
 }
 
 .modal-form {
-	width: 448px;
+	width: 210px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@media screen and (min-width: 480px) {
+		width: 370px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 448px;
+	}
 }
 
 .modal-form__group {
@@ -89,10 +105,16 @@
 	}
 
 	&::placeholder {
-		font-size: 12px;
-		line-height: 1.17;
+		font-size: 14px;
+		line-height: 1.14;
+
 		letter-spacing: 0.01em;
 		color: var(--placeholder-text-color);
+
+		@media screen and (min-width: 1200px) {
+			font-size: 12px;
+			line-height: 1.17;
+		}
 	}
 }
 
@@ -114,10 +136,15 @@
 .modal-form__checkbox-label {
 	@extend %flex-center;
 
-	font-size: 14px;
-	line-height: 1.71;
+	font-size: 12px;
+	line-height: 1.17;
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 1.71;
+	}
 }
 
 .modal-form__custom-icon {
@@ -145,6 +172,7 @@
 }
 
 .modal-form__checkbox-link {
+	display: inline;
 	color: #2196f3;
 }
 
